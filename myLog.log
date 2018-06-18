@@ -1,5 +1,0 @@
-Error: [18/Jun/2018 10:35:59] exception 'Exception' with message 'FileReader->read() is unable to open file.' in /home/ubuntu/workspace/myApp/class.fileReader.php:10
-Stack trace:
-#0 /home/ubuntu/workspace/myApp/class.app.php(17): FileReader->read('README.mda')
-#1 /home/ubuntu/workspace/myApp/WordCounter.php(7): App->doThatThing('README.mda')
-#2 {main}
