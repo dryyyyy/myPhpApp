@@ -6,7 +6,7 @@ class FileReader {
     
     public function read($filename){
         //trying to open the file
-        if (!$this->fp = file_get_contents($filename)) {
+        if (@!$this->fp = file_get_contents($filename)) {
             throw new Exception ("FileReader->read() is unable to open file.");
         } else {
             return $this->fp;
