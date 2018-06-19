@@ -2,7 +2,9 @@
 
 class WordCounter{
     private $words;
-    
+    /*
+    *
+    */
     public function count($file_contents){
         if(!is_string($file_contents)){
             throw new Exception ('WordCounter->count(): expects a sting as an attribute');
@@ -13,7 +15,9 @@ class WordCounter{
         }
         
     }
-    
+    /*
+    *
+    */
     public function sort($file_contents){
         if(!is_array($file_contents)){
             throw new Exception ('WordCounter->sort(): $file_contents must be an array');
