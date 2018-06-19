@@ -1,6 +1,6 @@
 <?php
 class Logger {
-	private $status, $dateFormat;
+	private $severity, $dateFormat;
 	public function __construct() {
 		$this->dateFormat = "d/M/Y H:i:s";
 	}
@@ -11,8 +11,8 @@ class Logger {
 		return $this->dateFormat;
 	}
 
-	public function log($status ,$entries) {
-	    $this->status = $status;
+	public function log($severity = 'Info',$entries) {
+	    $this->$severity = $severity;
 		if(is_string($entries)) {
 			print $this->status . ": [" . date($this->dateFormat) . "] " . $entries . "\n";
 		} else {
