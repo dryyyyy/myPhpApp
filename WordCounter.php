@@ -1,12 +1,10 @@
 <?php
-include_once('interface.logger.php');
-include_once('class.fileLogger.php');
-include_once('class.fileReader.php');
-include_once('class.wordCounter.php');
-include_once('class.csvHandler.php');
-include_once('class.app.php');
-include_once('class.logger.php');
+namespace MyNamespace\Classes;
 
+require __DIR__ . '/vendor/autoload.php';
+
+use MyNamespace\Classes;
+use MyNamespace\Interfaces;
 
 $logger = new FileLogger();
 $reader = new FileReader();
